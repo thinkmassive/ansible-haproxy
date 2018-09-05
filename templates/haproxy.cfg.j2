@@ -23,7 +23,7 @@ defaults
         timeout server 5000ms
 
 frontend http
-        bind {{ ansible_eth0_2.ipv4.address }}:80 alpn h2,http/1.1
+        bind {{ ansible_eth0_1.ipv4.address }}:80 alpn h2,http/1.1
         backlog 16383
         reqadd X-Forwarded-Proto:\ http
         default_backend app_pool
