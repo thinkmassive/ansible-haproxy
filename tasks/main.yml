@@ -32,7 +32,7 @@
     update_cache: yes
     cache_valid_time: 3600
   with_items:
-    - haproxy=1.8.*
+    - haproxy
     - heartbeat
     - curl
 
